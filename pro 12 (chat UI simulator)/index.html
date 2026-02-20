@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat UI Simulator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body class="light-mode">
+
+<div class="app">
+
+    <!-- Sidebar -->
+    <aside class="sidebar glass">
+        <h2 class="logo">ChatSim 3D</h2>
+
+        <button id="toggleMode" class="glass toggle-btn">🌗 Mode</button>
+        <button id="clearChat" class="glass action-btn">🧹 Clear Chat</button>
+        <button id="downloadChat" class="glass action-btn">📥 Download Chat</button>
+    </aside>
+
+    <!-- Chat Section -->
+    <main class="chat-area glass">
+
+        <!-- Top Bar -->
+        <header class="top-bar">
+            <h3>AI Chat Simulator</h3>
+        </header>
+
+        <!-- Chat Messages -->
+        <div id="chatContainer" class="chat-container"></div>
+
+        <!-- Input Area -->
+        <div class="input-bar neumorph">
+            <input type="text" id="messageInput" placeholder="Type your message..." autocomplete="off">
+            <button id="sendBtn" class="send-btn">➤</button>
+        </div>
+
+    </main>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
